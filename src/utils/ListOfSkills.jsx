@@ -8,7 +8,7 @@ function makeListOf(data) {
         alt={name}
         className="w-18 h-18"
       />
-      <span className="text-sm capitalize">{name}</span>
+    
     </div>
   ))}
 </div>
