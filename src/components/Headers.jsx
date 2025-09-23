@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../fonts.css'
+
 
 function Headers() {
   return (
-    <nav className="shadow-lg rounded-md">
-      <div className="p-4 flex justify-around w-[40%] font-header text-xl">
+    <nav className="bg-page rounded-md divider-y-2 shadow-md mb-2">
+      <div className="p-4 flex justify-around w-[40%] font-header
+       color-header">
       <div>
         <Link to="/">Home</Link>
       </div>

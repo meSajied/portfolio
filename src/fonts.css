@@ -4,13 +4,14 @@
 
 .font-header {
   font-family: 'Montserrat', sans-serif;
+  font-size: xx-large;
   font-weight: 500;
   color: hsl(0, 0%, 0%);
 }
 
 .font-intro-body {
   font-family: 'Zalando Sans Expanded', sans-serif;
-  font-size: large;
+  font-size: medium;
   font-weight: 400;
   color: hsl(0, 0%, 20%);
 }
