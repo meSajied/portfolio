@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 
 @import "tailwindcss";
 
 @theme {
   --font-header: 'Montserrat', sans-serif;
-  --font-name: 'Lato', sans-serif;
-  --font-intro-body: 'Zalando Sans Expanded', sans-serif;
+  --font-intro-name: 'Raleway', sans-serif;
+  --font-intro-body: 'Raleway', sans-serif;
 
   --color-header: hsl(0, 0%, 0%);
-  --color-intro-body: hsl(0, 0%, 25%);
+  --color-intro-body: hsl(0, 0%, 18%);
+  --color-intro-name: hsl(0, 0%, 0%);
 }
 
 @layer base {
@@ -20,16 +21,17 @@
     font-weight: 500;
   }
 
-  .font-name {
-    font-family: var(--font-body);
-    color: var(--color-intro-body);
+  .font-intro-name {
+    font-family: var(--font-intro-name);
+    color: var(--color-intro-name);
+    font-weight: 600;
     
   }
 
   .font-intro-body {
     font-family: var(--font-intro-body);
     color: var(--color-intro-body);
-    font-weight: 400;
+    font-weight: 500;
   }
   .bg-page {
     background-color: hsl(0, 0%, 98%);

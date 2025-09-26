@@ -1,0 +1,43 @@
+function Introduction({intro, loading, error}) {
+  
+
+  if (loading) {
+    return (
+      <div className="p-2 font-intro-body">
+        Loading...
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="p-2 font-intro-body">
+        Something is wrong...
+      </div>
+    );
+  }
+
+  if (!intro || intro.length === 0) {
+    return (
+      <div className="p-2 font-intro-body">
+        No introduction available.
+      </div>
+    );
+  }
+  
+  return (
+
+      <div className="p-2 space-y-4">
+      <div className='space-y-1'>
+        <p className='font-intro-name text-2xl'>Hi, I am</p>
+        <p className='font-intro-name text-4xl'>Sajied Shah Yousuf</p>
+      </div>
+      <div className='space-y-1'>
+        <p className='font-intro-body text-xl'>{intro[0]}</p>
+        <p className='font-intro-body text-xl indent-5'>{intro[1]}</p>
+      </div>
+    </div>
+  )
+}
+
+export { Introduction };
