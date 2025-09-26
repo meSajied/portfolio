@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 
 function Headers() {
   return (
-    <nav className="rounded-md divider-y-1 shadow-md mb-2">
-      <div className="p-4 flex justify-around md:w-[50%] font-header text-xl color-header">
+    <nav className="rounded-md divider-y-1 shadow-md mb-2 md:mb-10">
+      <div className="p-4 flex flex-col space-y-2 md:flex-row 
+        md:justify-around md:w-[50%] font-header text-lg color-header">
       <div>
         <Link to="/">Home</Link>
       </div>

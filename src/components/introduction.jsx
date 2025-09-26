@@ -1,21 +1,4 @@
-function Introduction({intro, loading, error}) {
-  
-
-  if (loading) {
-    return (
-      <div className="p-2 font-intro-body">
-        Loading...
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="p-2 font-intro-body">
-        Something is wrong...
-      </div>
-    );
-  }
+function Introduction({intro}) {
 
   if (!intro || intro.length === 0) {
     return (
@@ -33,8 +16,8 @@ function Introduction({intro, loading, error}) {
         <p className='font-intro-name text-4xl'>Sajied Shah Yousuf</p>
       </div>
       <div className='space-y-1'>
-        <p className='font-intro-body text-xl'>{intro[0]}</p>
-        <p className='font-intro-body text-xl indent-5'>{intro[1]}</p>
+        <p className='font-body text-lg'>{intro[0]}</p>
+        <p className='font-body text-lg indent-5'>{intro[1]}</p>
       </div>
     </div>
   )
