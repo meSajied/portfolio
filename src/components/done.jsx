@@ -9,7 +9,7 @@ function Done({achievements}) {
   }
 
   return (
-    <div className="md:pl-35 md:pr-35">
+    <div className="lg:pl-35 lg:pr-35">
       <div className="text-2xl font-sections">
         Achievement
       </div>

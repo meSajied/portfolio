@@ -1,13 +1,76 @@
 {
   "intro": ["I am passionate about building scalable and clean architectures and writing efficient algorithms. I enjoy automating workflows with tools, writing code in compiled languages such as C, C++, Java and applying optimization and micro-optimization techniques to build high-performance program.",
       "I also like exploring open-source projects, diving into with machine learning and low-level systems, and using rational thinking to solve complex problems.",
-      "I want to be elite like Levi, a fighter like Arima, a genius like L, a research talent like Orochimaru, and have the vibe like an Uchiha."],
+      "I like to be elite like Levi, a fighter like Kishou Arima, a genius like L, a research talent like Orochimaru, and have the vibe like an Uchiha."],
 
 
   "achievements": [
     "Worked effectively with real-world data without issues.",
     "implemented error-handling strategies for production software to ensure long-term reliability.",
     "Demonstrated strong debugging skills to quickly identify and resolve critical bugs, ensuring system reliability."
+  ],
+
+  "projects": [
+    {
+      "name": "A crawler written with Scrapy framework",
+      "details": [
+        "Built an automated web scraping tool using Scrapy to extract data from multiple job portals and websites while searching for job."
+      ]
+    },
+    {
+      "name": "A cryptography library in Java",
+      "details": [
+        "Developed a Java library implementing various cryptographic algorithms including AES, DES, RSA."
+      ]
+    },
+    {
+      "name": "A password manager using Spring Boot",
+      "details": [
+        "Created a secure password manager application with Spring Boot."
+      ]
+    },
+    {
+      "name": "An attendance management system using React and Spring Boot",
+      "details": [
+        "Developed a full-stack attendance management system with React frontend and Spring Boot backend. Implemented user authentication, role-based access control with Spring Security, and real-time attendance tracking features with PostgreSQL database."
+      ]
+    },
+    {
+      "name": "A faculty recruitment system using React and Node.js",
+      "details": [
+        "Built a faculty recruitment web application with React frontend and Node.js backend. Implemented features for job posting, and application management using MySQL database."
+      ]
+    }
+  ],
+
+  "opensource": [
+    {
+      "name": "Compiled customised VLC for my own machine",
+      "details": [
+        "Explored VLC source code, found and solved compilation issues in build configuration file and successfully compiled VLC with custom options for my own machine."
+      ]
+    },
+    {
+      "name": "Contribute to an algorithm repository",
+      "details": [
+        "Added a geometry algorithm to an open-source algorithm repository written in C, including detailed documentation and added a data structure written in Python in another repository."
+      ]
+    }
+  ],
+
+  "setbacks": [
+    {
+      "name": "Debugging Tensorflow",
+      "details": [
+        "I found an issue in the repository of Tensorflow, I started to debug it not reading the disscussion of the thread. I found C code and some python code generated from C. I started setting breakpoints and debugging the code, found out that it is deprecated in the latest version of Tensorflow. While going to write it in the issue thread, it was already mentioned in the thread that it is deprecated may be one month ago. And I wasted three hours debugging it. Same goes for Brave browser."
+      ]
+    },
+    {
+      "name": "Solving uphysics problems",
+      "details": [
+        "One of my batchmates showed me a problem from uphysics contest. I spent two hours the first night and one hour the second night solving it, but later I found out I couldn’t submit it since I wasn’t registered for the contest and didn’t attend at the physics department, even though I still had a week left."
+      ]
+    }
   ],
 
   "skills": {

@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react'
 import emailjs from '@emailjs/browser';
 import './index.css'
-import { Home } from './components/home'
+import { FetchData } from './api/fetch-data';
+import { Home } from './pages/home'
 import { Headers } from './components/headers'
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
-import { Projects } from './components/projects'
-import { NotFound } from './components/not-found';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Projects } from './pages/projects'
+import { NotFound } from './pages/not-found';
+import { Setbacks } from './pages/setbacks';
 
 function App() {
+  const {data, loading, error} = FetchData();
   // useEffect(() => {
   //   emailjs.send(
   //     import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -19,12 +22,15 @@ function App() {
   return (
     <div className="bg-page min-h-screen">
     <BrowserRouter>
-    <Headers />
+      <Headers />
+      <div className='p-8'>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/" element={<Home data={data} loading={loading} error={error} />} />
+        <Route path="/projects" element={<Projects projects={data?.projects} opensource={data?.opensource}/>} />
+        <Route path="/failed" element={<Setbacks setbacks={data?.setbacks} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </div>
     </BrowserRouter>
     </div>
   );

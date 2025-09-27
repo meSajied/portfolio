@@ -10,7 +10,7 @@ function Introduction({intro}) {
   
   return (
 
-      <div className="p-2 space-y-4">
+      <div className="space-y-4">
       <div className='space-y-1'>
         <p className='font-intro-name text-2xl'>Hi, I am</p>
         <p className='font-intro-name text-4xl'>Sajied Shah Yousuf</p>
