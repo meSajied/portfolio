@@ -11,13 +11,13 @@ import { Setbacks } from './pages/setbacks';
 
 function App() {
   const {data, loading, error} = FetchData();
-  // useEffect(() => {
-  //   emailjs.send(
-  //     import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-  //     import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-  //     { message: "New visitor on portfolio!" },
-  //     import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-  //   )}, []);
+  useEffect(() => {
+    emailjs.send(
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      { message: "New visitor on portfolio!" },
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+    )}, []);
 
   return (
     <div className="bg-page min-h-screen">
