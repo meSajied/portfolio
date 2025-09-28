@@ -6,7 +6,7 @@ function Headers() {
   return (
     <nav className="rounded-md divider-y-1 shadow-md mb-2 md:mb-10">
       <div className="p-4 flex flex-col md:flex-row 
-        md:justify-around md:w-[50%] font-header text-base color-header">
+        md:justify-around md:w-[80%] lg:w-[60%] font-header text-base color-header">
       <div>
         <Link to="/">Home</Link>
       </div>
