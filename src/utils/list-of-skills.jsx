@@ -6,7 +6,7 @@ function makeListOf(data) {
       <img
         src={url}
         alt={name}
-        className="md:w-15 md:h-15 lg:w-18 lg:h-18 w-10 h-10"
+        className="md:w-15 md:h-15 w-10 h-10"
       />
     </div>
   ))}

@@ -15,14 +15,14 @@ function Projects({projects, opensource}) {
     <div className="flex justify-center">
       <div className="space-y-15 lg:w-[70%]">
           <div>
-            <p className="text-2xl font-z mb-5">Open-Sources</p>
+            <p className="text-xl font-z mb-5">Open-Sources</p>
 
             <div className="space-y-4">
               {ProjectList({projects: opensource})}
             </div>
           </div>
           <div>
-            <p className="text-2xl font-z mb-5">Projects</p>
+            <p className="text-xl font-z mb-5">Projects</p>
 
             <div className="space-y-4">
               {ProjectList({projects})}

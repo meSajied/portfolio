@@ -14,7 +14,7 @@
     {
       "name": "A crawler written with Scrapy framework",
       "details": [
-        "Built an automated web scraping tool using Scrapy to extract data from multiple job portals and websites while searching for job."
+        "Built an automated web scraping tool using Scrapy to extract data from multiple job portals and websites while searching for job that filters Java positions worldwide."
       ]
     },
     {

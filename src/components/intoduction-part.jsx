@@ -14,8 +14,8 @@ function IntroPart({data, loading, error}) {
         </div>
         </div>
       </div>
-      <div className="hidden md:flex justify-end font-body text-lg">
-        <div className="md:w-[75%] lg:w-[70%]">{data?.intro[2]}</div>
+      <div className="hidden md:flex justify-end font-body text-base">
+        <div className="md:w-[75%] lg:w-[65%] md:mr-20">{data?.intro[2]}</div>
       </div>
     </div>
   )

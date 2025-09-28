@@ -16,7 +16,7 @@ function Done({achievements}) {
       <div className="p-4 font-body">
         <ul className=" list-disc pl-8 space-y-2">
         {achievements.map((item, index) => (
-          <li key={index} className="text-lg">
+          <li key={index} className="text-base">
             {item}
           </li>
         ))}

@@ -16,8 +16,8 @@ function Introduction({intro}) {
         <p className='font-intro-name text-4xl'>Sajied Shah Yousuf</p>
       </div>
       <div className='space-y-1'>
-        <p className='font-body text-lg'>{intro[0]}</p>
-        <p className='font-body text-lg indent-5'>{intro[1]}</p>
+        <p className='font-body text-base'>{intro[0]}</p>
+        <p className='font-body text-base indent-5'>{intro[1]}</p>
       </div>
     </div>
   )
