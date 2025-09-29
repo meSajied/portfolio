@@ -27,7 +27,6 @@ function Home({data, loading, error}) {
     <div className="space-y-15">
       <IntroPart data={data}/>
       <Skills skills={data?.skills}/>
-      <Resume />
       <Done achievements={data.achievements} />
       <div className='md:hidden'><Contacts /></div>
       <Footer />

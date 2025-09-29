@@ -12,12 +12,25 @@ import { Setbacks } from './pages/setbacks';
 function App() {
   const {data, loading, error} = FetchData();
   useEffect(() => {
-    emailjs.send(
-      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-      { message: "New visitor on portfolio!" },
-      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-    )}, []);
+  const sendVisitorInfo = async () => {
+    try {
+      const res = await fetch("https://api.ipify.org?format=json");
+      const data = await res.json();
+      const ip = data.ip;
+
+      await emailjs.send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        { message: "New visitor on portfolio! " + ip },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      );
+    } catch (error) {
+      console.error("Error sending visitor info:", error);
+    }
+  };
+
+  sendVisitorInfo();
+  }, []);
 
   return (
     <div className="bg-page min-h-screen">
