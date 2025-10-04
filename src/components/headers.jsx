@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HOME, MIS_STEPS, PROJECTS } from "../paths";
 
 
 function Headers() {
@@ -8,13 +9,13 @@ function Headers() {
       <div className="p-4 flex flex-col md:flex-row 
         md:justify-around md:w-[80%] lg:w-[60%] font-header text-base color-header">
       <div>
-        <Link to="/">Home</Link>
+        <Link to={HOME}>Home</Link>
       </div>
       <div>
-        <Link to="/projects">Projects & Open-sources</Link>
+        <Link to={PROJECTS}>Projects & Open-sources</Link>
       </div>
       <div>
-        <Link to="/failed">Experiments & Missteps</Link>
+        <Link to={MIS_STEPS}>Experiments & Missteps</Link>
       </div>
       </div>
       </nav>
