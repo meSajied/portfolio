@@ -1,9 +1,12 @@
-function ProjectList({projects}) {  
+function ExperienceList({experience}) {  
   return (
     <div className="ml-4 lg:ml-10">
-      {projects && projects.map((project, index) => (
-        <div className="mb-3" key={index}>
-          <li className="font-sections text-lg">{project.name}</li>
+      {experience && experience.map((project, index) => (
+        <div className="mb-5" key={index}>
+          <div className="mb-1 flex flex-wrap justify-between items-baseline">
+            <li className="font-sections text-lg">{project.name}</li>
+            <div className="font-body text-sm italic">{project.time}</div>
+          </div>
 
           <div className="pl-4 pr-4">
             <ul className="list-inside font-body text-base">
@@ -20,4 +23,4 @@ function ProjectList({projects}) {
   );
 }
 
-export { ProjectList };
+export { ExperienceList };

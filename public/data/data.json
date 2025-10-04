@@ -11,6 +11,34 @@
     "Worked effectively with real-world datasets without facing any difficulty."
   ],
 
+  "experience": [
+    {
+      "name": "Software Engineer, Ghuddy Limited",
+      "time": "April, 2025 - Present",
+      "details": [
+        "Improved API performance by 4x by implementing caching strategies and refactoring business logic, reducing CPU time from 390ms to 100ms.",
+        "Integrated AWS ElastiCache for Redis, managing full AWS configuration including VPC setup and security group rules to ensure secure and scalable caching.",
+        "optimized code performance through profiling, reducing downtime and improving responsiveness.",
+        "Upgraded and refactored the Backend to Spring Boot 3.x and Elasticsearch to API version 8.x, improving compatibility."
+      ]
+    },
+    {
+      "name": "Java Developer Intern, Itransition Limited",
+      "time": "May, 2024 - August, 2024",
+      "details": [
+        "Recognized for outperforming most junior developers."
+      ]
+    },
+    {
+      "name": "Mentor, DeepLearning.AI",
+      "time": "October, 2021 - January, 2023",
+      "details": [
+        "Provided strong mentorship to learners, resulting in positive feedback."
+      ]
+    }
+   
+  ],
+
   "projects": [
     {
       "name": "A crawler written with Scrapy framework",

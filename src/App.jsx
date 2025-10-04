@@ -8,7 +8,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Projects } from './pages/projects'
 import { NotFound } from './pages/not-found';
 import { Setbacks } from './pages/setbacks';
-import { HOME, MIS_STEPS, NOT_FOUND, PROJECTS } from './paths';
+import { EXPERIENCE, HOME, MIS_STEPS, NOT_FOUND, PROJECTS } from './paths';
+import { Experience } from './pages/experience';
 
 function App() {
   const {data, loading, error} = FetchData();
@@ -40,6 +41,7 @@ function App() {
       <div className='p-8'>
       <Routes>
         <Route path={HOME} element={<Home data={data} loading={loading} error={error} />} />
+        <Route path={EXPERIENCE} element={<Experience experience={data?.experience} />} />
         <Route path={PROJECTS} element={<Projects projects={data?.projects} opensource={data?.opensource}/>} />
         <Route path={MIS_STEPS} element={<Setbacks setbacks={data?.setbacks} />} />
         <Route path={NOT_FOUND} element={<NotFound />} />
