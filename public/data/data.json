@@ -6,7 +6,7 @@
   "achievements": [
     "Recognized by CEO and Managing Director for understanding and analyzing a 10,500-line legacy codebase in just 25 days.",
     "Demonstrated strong bug reproducing and debugging skills to quickly identify and resolve critical issues, ensuring system reliability.",
-    "implemented error-handling strategies for production software to ensure long-term reliability.",
+    "Implemented error-handling strategies for production software to ensure long-term reliability.",
     "Demonstrated strong bug reproducing and debugging skills to quickly identify and resolve critical issues, ensuring system reliability.",
     "Worked effectively with real-world datasets without facing any difficulty."
   ],
@@ -18,7 +18,7 @@
       "details": [
         "Improved API performance by 4x by implementing caching strategies and refactoring business logic, reducing CPU time from 390ms to 100ms.",
         "Integrated AWS ElastiCache for Redis, managing full AWS configuration including VPC setup and security group rules to ensure secure and scalable caching.",
-        "optimized code performance through profiling, reducing downtime and improving responsiveness.",
+        "Optimized code performance through profiling, reducing downtime and improving responsiveness.",
         "Upgraded and refactored the Backend to Spring Boot 3.x and Elasticsearch to API version 8.x, improving compatibility."
       ]
     },
@@ -49,25 +49,25 @@
     {
       "name": "A cryptography library in Java",
       "details": [
-        "Developed a Java library implementing various cryptographic algorithms including AES, DES, RSA."
+        "Developed a Java library for a university lab project to perform encryption and decryption using AES, DES, and RSA algorithms."
       ]
     },
     {
       "name": "A password manager using Spring Boot",
       "details": [
-        "Created a secure password manager application with Spring Boot."
+        "Developed a secure password manager using Spring Boot to store passwords in a personal database."
       ]
     },
     {
-      "name": "An attendance management system using React and Spring Boot",
+      "name": "An attendance management system built with React and Spring Boot for the company",
       "details": [
-        "Developed a full-stack attendance management system with React frontend and Spring Boot backend. Implemented user authentication, role-based access control with Spring Security, and real-time attendance tracking features with PostgreSQL database."
+        "Developed a full-stack attendance management system with a React frontend and Spring Boot backend. Implemented user authentication, role-based access control with Spring Security, and real-time attendance tracking using a PostgreSQL database for the company."
       ]
     },
     {
       "name": "A faculty recruitment system using React and Node.js",
       "details": [
-        "Built a faculty recruitment web application with React frontend and Node.js backend. Implemented features for job posting, and application management using MySQL database."
+        "Built a faculty recruitment web application for a final-year university project with a React frontend and Node.js backend. Implemented features for job posting and application management using a MySQL database."
       ]
     }
   ],
