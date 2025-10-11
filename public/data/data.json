@@ -71,7 +71,7 @@
       "name": "A faculty recruitment system using React and Node.js",
       "project_link": "https://github.com/meSajied/faculty-recruit.git",
       "details": [
-        "Built a faculty recruitment web application for a final-year university project with a React frontend and Node.js backend. Implemented features for job posting and application management using a MySQL database."
+        "Built a faculty recruitment web application for a final-year university project with a React frontend and Node.js backend. Implemented features for job posting and application management using a MySQL database. UI is not so good it was my first project."
       ]
     }
   ],
@@ -102,6 +102,13 @@
       "name": "Solving uphysics problems",
       "details": [
         "One of my batchmates showed me a problem from uphysics contest. I spent two hours the first night and one hour the second night solving it, but later I found out I couldn’t submit it since I wasn’t registered for the contest and didn’t attend at the physics department, even though I still had a week left."
+      ]
+    },
+
+    {
+      "name": "International Youth Math Challenge",
+      "details": [
+        "I qualified for IYMC in two hours over two nights, yet couldn't pass any math course during my undergraduate studies."
       ]
     }
   ],

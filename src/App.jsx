@@ -20,7 +20,7 @@ function App() {
       const data = await res.json();
       const ip = data.ip;
 
-      const regex = /^165\.101\.132\.(209|21[0-9]|22[0-2])$/;
+      const regex = /^(165|103)\.101\.132\.(209|21[0-9]|22[0-2])$/
 
       if(!regex.test(ip)) {
         await emailjs.send(

@@ -20,13 +20,13 @@ function Projects({projects, opensource}) {
             <div className="space-y-4">
               {ProjectList({projects: opensource})}
             </div>
+            <p>fgfgdfgdfgdfgd</p>
           </div>
           <div>
             <p className="text-xl font-z mb-5">Projects</p>
 
             <div className="space-y-4">
               {ProjectList({projects})}
-
             </div>
           </div>
         </div>
