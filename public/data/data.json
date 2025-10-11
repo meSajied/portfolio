@@ -48,24 +48,28 @@
     },
     {
       "name": "A cryptography library in Java",
+      "project_link": "https://github.com/meSajied/cryptograph.git",
       "details": [
         "Developed a Java library for a university lab project to perform encryption and decryption using AES, DES, and RSA algorithms."
       ]
     },
     {
       "name": "A password manager using Spring Boot",
+      "project_link": "https://github.com/meSajied/passmanager.git",
       "details": [
         "Developed a secure password manager using Spring Boot to store passwords in a personal database."
       ]
     },
     {
       "name": "An attendance management system built with React and Spring Boot for the company",
+      "project_link": "https://github.com/meSajied/attendace.git",
       "details": [
         "Developed a full-stack attendance management system with a React frontend and Spring Boot backend. Implemented user authentication, role-based access control with Spring Security, and real-time attendance tracking using a PostgreSQL database for the company."
       ]
     },
     {
       "name": "A faculty recruitment system using React and Node.js",
+      "project_link": "https://github.com/meSajied/faculty-recruit.git",
       "details": [
         "Built a faculty recruitment web application for a final-year university project with a React frontend and Node.js backend. Implemented features for job posting and application management using a MySQL database."
       ]

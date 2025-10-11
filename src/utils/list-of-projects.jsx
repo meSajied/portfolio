@@ -3,7 +3,21 @@ function ProjectList({projects}) {
     <div className="ml-4 lg:ml-10 pr-4">
       {projects && projects.map((project, index) => (
         <div className="mb-3" key={index}>
-          <li className="font-sections text-lg">{project.name}</li>
+          <div className="mb-1 flex flex-wrap justify-between items-baseline">
+            <li className="font-sections text-lg">{project.name}</li>
+            <div className="font-body italic lg:mr-30">
+              {project?.project_link && (
+              <a
+                href={project.project_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-blue-950"
+              >
+                Project Link
+              </a>
+            )}
+            </div>
+          </div>
 
           <div>
             <ul className="list-inside font-body text-base">

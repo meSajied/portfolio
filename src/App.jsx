@@ -26,7 +26,7 @@ function App() {
         await emailjs.send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        { message: "New visitor on portfolio! " + ip },
+        { ip: ip, message: "New visitor on portfolio! " + ip },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
       }
     } catch (error) {
