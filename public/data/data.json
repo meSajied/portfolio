@@ -71,7 +71,7 @@
       "name": "A faculty recruitment system using React and Node.js",
       "project_link": "https://github.com/meSajied/faculty-recruit.git",
       "details": [
-        "Built a faculty recruitment web application for a final-year university project with a React frontend and Node.js backend. Implemented features for job posting and application management using a MySQL database. UI is not so good it was my first project."
+        "Built a faculty recruitment web application for a final-year university project with a React frontend and Node.js backend. Implemented features for job posting and application management using a MySQL database. UI should be overlooked as it was my first project."
       ]
     }
   ],
