@@ -14,7 +14,7 @@ function Experience({experience}) {
     <div className="flex justify-center">
       <div className="lg:w-[70%]">
           <div>
-            <p className="text-xl font-z mb-5">Experience</p>
+            <p className="text-lg font-z mb-5">Experience</p>
 
             <div>
               {ExperienceList({experience})}

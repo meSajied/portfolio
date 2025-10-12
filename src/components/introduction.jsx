@@ -10,14 +10,14 @@ function Introduction({intro}) {
   
   return (
 
-      <div className="space-y-4">
+      <div className="space-y-3">
       <div className='space-y-1'>
-        <p className='font-intro-name text-2xl'>Hi, I am</p>
-        <p className='font-intro-name text-4xl'>Sajied Shah Yousuf</p>
+        <p className='font-intro-name text-xl'>Hi, I am</p>
+        <p className='font-intro-name text-2xl'>Sajied Shah Yousuf</p>
       </div>
       <div className='space-y-1'>
-        <p className='font-body text-base'>{intro[0]}</p>
-        <p className='font-body text-base indent-5'>{intro[1]}</p>
+        <p className='font-body text-sm'>{intro[0]}</p>
+        <p className='font-body text-sm indent-5'>{intro[1]}</p>
       </div>
     </div>
   )

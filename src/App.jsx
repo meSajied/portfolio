@@ -20,9 +20,7 @@ function App() {
       const data = await res.json();
       const ip = data.ip;
 
-      const regex = /^(165|103)\.101\.132\.(209|21[0-9]|22[0-2])$/
-
-      if(!regex.test(ip)) {
+      if(!window.location.hostname === "localhost") {
         await emailjs.send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
@@ -36,7 +34,7 @@ function App() {
 
   sendVisitorInfo();
   }, []);
-
+  
   return (
     <div className="bg-page min-h-screen">
     <BrowserRouter>

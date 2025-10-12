@@ -5,7 +5,7 @@ function Setbacks({setbacks}) {
     <div className="flex justify-center">
       <div className="space-y-15 lg:w-[70%]">
           <div>
-            <p className="text-xl font-z mb-5">Experiments & Missteps</p>
+            <p className="text-lg font-z mb-5">Experiments & Missteps</p>
 
             <div>
               {<SetbackList setbacks={setbacks} />}

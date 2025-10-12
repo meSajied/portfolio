@@ -10,13 +10,13 @@ function Done({achievements}) {
 
   return (
     <div className="lg:pl-35 lg:pr-35">
-      <div className="text-2xl font-sections">
+      <div className="text-lg font-sections">
         Achievements
       </div>
       <div className="p-4 font-body">
         <ul className=" list-disc pl-8 space-y-2">
         {achievements.map((item, index) => (
-          <li key={index} className="text-base">
+          <li key={index} className="text-sm">
             {item}
           </li>
         ))}
