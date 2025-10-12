@@ -20,10 +20,10 @@ function ProjectList({projects}) {
           </div>
 
           <div>
-            <ul className="list-inside font-body text-sm">
+            <ul className="list-inside font-body">
               {project.details && project.details.map((detail, idx) => (
                 <li className="relative pl-4 before:content-['-'] 
-                before:absolute before:left-0" 
+                before:absolute before:left-0 text-sm" 
                 key={idx}>{detail}</li>
               ))}
             </ul>
