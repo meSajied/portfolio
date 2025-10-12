@@ -34,6 +34,8 @@ function App() {
 
   sendVisitorInfo();
   }, []);
+
+  console.log(!window.location.hostname);
   
   return (
     <div className="bg-page min-h-screen">
