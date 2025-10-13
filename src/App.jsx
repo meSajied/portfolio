@@ -38,7 +38,10 @@ function App() {
   console.log(!window.location.hostname);
   
   return (
-    <div className="bg-page min-h-screen">
+    <div className="bg-page min-h-screen"
+    // style={{ backgroundImage: "url(https://i.artfile.me/wallpaper/25-11-2016/1920x1080/anime-death-note-l-lawliet-1104225.jpg)", backgroundSize: "cover", backgroundPosition: "center", opacity:0.2}}
+    >
+      
     <BrowserRouter>
       <Headers />
       <div className='p-8'>
