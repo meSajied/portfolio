@@ -20,13 +20,16 @@ function App() {
       const data = await res.json();
       const ip = data.ip;
 
-      if(!window.location.hostname === "localhost") {
-        await emailjs.send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        { ip: ip, message: "New visitor on portfolio! " + ip },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
-      }
+      const emailResponse = await fetch(import.meta.env.VITE_APP_EMAIL_SENDER, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ip}),
+      })
+      .then(res => res.json());
+      console.log(emailResponse);
+        
     } catch (error) {
       console.error("Error sending visitor info:", error);
     }
@@ -35,12 +38,8 @@ function App() {
   sendVisitorInfo();
   }, []);
 
-  console.log(!window.location.hostname);
-  
   return (
-    <div className="bg-page min-h-screen"
-    // style={{ backgroundImage: "url(https://i.artfile.me/wallpaper/25-11-2016/1920x1080/anime-death-note-l-lawliet-1104225.jpg)", backgroundSize: "cover", backgroundPosition: "center", opacity:0.2}}
-    >
+    <div className="bg-page min-h-screen">
       
     <BrowserRouter>
       <Headers />
