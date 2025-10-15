@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import emailjs from '@emailjs/browser';
 import './index.css'
 import { FetchData } from './api/fetch-data';
 import { Home } from './pages/home'
@@ -31,7 +30,7 @@ function App() {
       console.log(emailResponse);
         
     } catch (error) {
-      console.error("Error sending visitor info:", error);
+      console.error(error);
     }
   };
 
