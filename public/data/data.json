@@ -14,7 +14,7 @@
   "experience": [
     {
       "name": "Software Engineer, Ghuddy Limited",
-      "time": "April, 2025 - Present",
+      "time": "March, 2025 - Present",
       "details": [
         "Improved API performance by 4x by implementing caching strategies and refactoring business logic, reducing CPU time from 390ms to 100ms.",
         "Integrated AWS ElastiCache for Redis, managing full AWS configuration including VPC setup and security group rules to ensure secure and scalable caching.",
