@@ -5,6 +5,7 @@ import { Resume } from '../components/resume';
 import { Footer } from '../components/footer';
 import { Contacts } from '../components/contacts';
 import { Done } from '../components/done';
+import { Screenshot } from '../components/screenshot';
 
 function Home({data, loading, error}) {
   if(loading) {
@@ -29,6 +30,7 @@ function Home({data, loading, error}) {
       <Skills skills={data?.skills}/>
       <Resume />
       <Done achievements={data.achievements} />
+      <Screenshot />
       <div className='md:hidden'><Contacts /></div>
       <Footer />
 

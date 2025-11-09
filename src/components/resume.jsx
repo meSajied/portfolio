@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+
 function Resume() {
   return (
     <div className="font-z text-base flex justify-center">
@@ -9,6 +10,6 @@ function Resume() {
         to={import.meta.env.VITE_APP_NOTEBOOK}>Click Here</Link>
     </div>
   )
-  
 }
+
 export {Resume};
