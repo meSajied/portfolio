@@ -12,30 +12,30 @@ import { Experience } from './pages/experience';
 
 function App() {
   const {data, loading, error} = FetchData();
-  // useEffect(() => {
-  // const sendVisitorInfo = async () => {
-  //   try {
-  //     const res = await fetch("https://api.ipify.org?format=json");
-  //     const data = await res.json();
-  //     const ip = data.ip;
+  useEffect(() => {
+  const sendVisitorInfo = async () => {
+    try {
+      const res = await fetch("https://api.ipify.org?format=json");
+      const data = await res.json();
+      const ip = data.ip;
 
-  //     const emailResponse = await fetch(import.meta.env.VITE_APP_EMAIL_SENDER, {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({ip}),
-  //     })
-  //     .then(res => res.json());
-  //     console.log(emailResponse);
+      const emailResponse = await fetch(import.meta.env.VITE_APP_EMAIL_SENDER, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ip}),
+      })
+      .then(res => res.json());
+      console.log(emailResponse);
         
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
-  // sendVisitorInfo();
-  // }, []);
+  sendVisitorInfo();
+  }, []);
 
   return (
     <div className="bg-page min-h-screen">
