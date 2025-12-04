@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './index.css'
 import { FetchData } from './api/fetch-data';
 import { Home } from './pages/home'
@@ -12,12 +12,16 @@ import { Experience } from './pages/experience';
 
 function App() {
   const {data, loading, error} = FetchData();
+  const [ipinfo, setIpinfo] = useState({});
+  
   useEffect(() => {
   const sendVisitorInfo = async () => {
     try {
-      const res = await fetch("https://api.ipify.org?format=json");
-      const data = await res.json();
-      const ip = data.ip;
+      const res = await fetch("http://ip-api.com/json/");
+      const dat = await res.json();
+      setIpinfo(dat);
+      
+      const ip = dat.query;
 
       const emailResponse = await fetch(import.meta.env.VITE_APP_EMAIL_SENDER, {
         method: "POST",
@@ -44,7 +48,7 @@ function App() {
       <Headers />
       <div className='p-8'>
       <Routes>
-        <Route path={HOME} element={<Home data={data} loading={loading} error={error} />} />
+        <Route path={HOME} element={<Home data={data} loading={loading} error={error} ipinfo={ipinfo} />} />
         <Route path={EXPERIENCE} element={<Experience experience={data?.experience} />} />
         <Route path={PROJECTS} element={<Projects projects={data?.projects} opensource={data?.opensource}/>} />
         <Route path={MIS_STEPS} element={<Setbacks setbacks={data?.setbacks} />} />
