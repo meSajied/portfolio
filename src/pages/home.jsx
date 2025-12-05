@@ -13,8 +13,8 @@ function Home({data, loading, error, ipinfo}) {
 
   useEffect(() => {
     const changeState = () => {
-      if(ipinfo?.isp == "Microsoft Limited" && 
-          allowedIP.test(ipinfo?.query)) {
+      if(ipinfo?.connection?.isp == "Microsoft Corporation" && 
+          allowedIP.test(ipinfo?.ip)) {
         setMicro(true)
       }
     }

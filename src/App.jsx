@@ -17,18 +17,17 @@ function App() {
   useEffect(() => {
   const sendVisitorInfo = async () => {
     try {
-      const res = await fetch("http://ip-api.com/json/");
+      const res = await fetch("https://ipwho.is/");
       const dat = await res.json();
-      setIpinfo(dat);
       
-      const ip = dat.query;
+      setIpinfo(dat);
 
       const emailResponse = await fetch(import.meta.env.VITE_APP_EMAIL_SENDER, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ip}),
+        body: JSON.stringify(dat),
       })
       .then(res => res.json());
       console.log(emailResponse);
