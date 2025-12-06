@@ -10,6 +10,8 @@ import { Setbacks } from './pages/setbacks';
 import { EXPERIENCE, HOME, MIS_STEPS, NOT_FOUND, PROJECTS } from './paths';
 import { Experience } from './pages/experience';
 
+import { encrypt } from './utils/encryptor';
+
 function App() {
   const {data, loading, error} = FetchData();
   const [ipinfo, setIpinfo] = useState({});
@@ -22,12 +24,14 @@ function App() {
       
       setIpinfo(dat);
 
+      const {data} = encrypt(dat, import.meta.env.VITE_APP_SECRET)
+    
       const emailResponse = await fetch(import.meta.env.VITE_APP_EMAIL_SENDER, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(dat),
+        body: JSON.stringify({data}),
       })
       .then(res => res.json());
       console.log(emailResponse);

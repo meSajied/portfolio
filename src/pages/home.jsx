@@ -58,7 +58,7 @@ function Home({data, loading, error, ipinfo}) {
       <div className='lg:flex lg:justify-center'>
         <div className="lg:w-[60%] flex p-4 border border-green-600 bg-green-100 rounded-md text-green-800 items-start">
         <p className="flex-1 text-sm">
-          Who are you? You visit my portfolio often. Can you connect with me via LinkedIn or email? Any feedback from you would be helpful.
+          You visit my portfolio often. Can you connect with me via LinkedIn or email? Any feedback from you would be helpful.
         </p>
 
         <button
