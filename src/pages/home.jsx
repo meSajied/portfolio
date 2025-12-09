@@ -7,22 +7,7 @@ import { Contacts } from '../components/contacts';
 import { Done } from '../components/done';
 import { Screenshot } from '../components/screenshot';
 
-function Home({data, loading, error, ipinfo}) {
-  const [micro, setMicro] = useState(false);
-  const allowedIP = /^(9\.|72\.|135\.)/;
-
-  useEffect(() => {
-    const changeState = () => {
-      if(ipinfo?.connection?.isp == "Microsoft Corporation" && 
-          allowedIP.test(ipinfo?.ip)) {
-        setMicro(true)
-      }
-    }
-
-    changeState();
-
-  }, [ipinfo])
-
+function Home({data, loading, error}) {
   if(loading) {
     return (
       <>
@@ -41,7 +26,6 @@ function Home({data, loading, error, ipinfo}) {
   
   return (
     <div className="space-y-15">
-      {micro && message()}
       <IntroPart data={data}/>
       <Skills skills={data?.skills}/>
       <Resume />
@@ -49,28 +33,8 @@ function Home({data, loading, error, ipinfo}) {
       <Screenshot />
       <div className='md:hidden'><Contacts /></div>
       <Footer />
-
     </div>
   )
-
-  function message() {
-    return (
-      <div className='lg:flex lg:justify-center'>
-        <div className="lg:w-[60%] flex p-4 border border-green-600 bg-green-100 rounded-md text-green-800 items-start">
-        <p className="flex-1 text-sm">
-          You visit my portfolio often. Can you connect with me via LinkedIn or email? Any feedback from you would be helpful.
-        </p>
-
-        <button
-          onClick={() => setMicro(false)}
-          className="ml-4 text-green-700 hover:text-green-900 font-bold text-xl leading-none"
-        >
-          ×
-        </button>
-      </div>
-      </div>
-    );
-  }
 }
 
 export {Home};
