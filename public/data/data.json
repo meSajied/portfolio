@@ -16,10 +16,16 @@
       "name": "Software Engineer, Ghuddy Limited",
       "time": "March, 2025 - November 2025",
       "details": [
-        "Improved API performance by 4x by implementing caching strategies and refactoring business logic, reducing CPU time from 390ms to 100ms.",
+        "Optimized API performance by 74.5%, by implementing caching strategy and refactoring inefficient business logic, reducing CPU time from 390ms to 100ms.",
+        "Reduced authorization errors by 100%, by eliminating inconsistent access behavior.",
+        "Reduced backend implementation time by 90% by refactoring 3 complex logic flows using AI-powered coding tools.",
         "Integrated AWS ElastiCache for Redis, managing full AWS configuration including VPC setup and security group rules to ensure secure and scalable caching.",
+        "Built and maintained a CI/CD pipeline using Jenkins, automating Docker image builds and deployments on AWS.",
+        "Resolved a dependency issue that was producing a misleading error message by leveraging prior experience despite the lack of information and guidance.",
+        "Upgraded and refactored the Backend to Spring Boot 3.x and Elasticsearch to API version 8.x, improving compatibility.",
         "Optimized code performance through profiling, reducing downtime and improving responsiveness.",
-        "Upgraded and refactored the Backend to Spring Boot 3.x and Elasticsearch to API version 8.x, improving compatibility."
+        "Recognized by CEO and Managing Director for analyzing and understanding a 10,500-line legacy codebase in 25 days.",
+        "Recognized for Demonstrating excellence in reproducing and debugging complex software issues."
       ]
     },
     {
@@ -44,6 +50,13 @@
       "name": "A crawler written with Scrapy framework",
       "details": [
         "Built an automated web scraping tool using Scrapy to extract data from multiple job portals and websites while searching for job that filters Java positions worldwide."
+      ]
+    },
+    {
+      "name": "An ordinary Cats vs Dogs classifier using TensorFlow",
+      "project_link": "https://github.com/meSajied/tfmodel.git",
+      "details": [
+        "But you will learn how to save configuaration and layer weights, and resume training from the last checkpoint."
       ]
     },
     {

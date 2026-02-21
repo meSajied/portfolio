@@ -29,8 +29,7 @@ function Home({data, loading, error}) {
       <IntroPart data={data}/>
       <Skills skills={data?.skills}/>
       <Resume />
-      <Done achievements={data.achievements} />
-      <Screenshot />
+      {/* <Done achievements={data.achievements} /> */}
       <div className='md:hidden'><Contacts /></div>
       <Footer />
     </div>
